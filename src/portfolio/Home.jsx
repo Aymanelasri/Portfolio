@@ -11,7 +11,7 @@ export default function Home() {
                     <h4 className="h3 text-secondary fw-semibold mb-4">Full-Stack Developer</h4>
                     <p className="lead text-light fs-5">I create modern and powerful web applications designed to scale easily, delivering high performance with creativity and passion</p>
                     <div className="mb-4">
-                        <button className="btn btn-primary me-3">DOWNLOAD CV</button>
+                        <a href="/MyCv.pdf" download="Aymane_Elasri_CV.pdf" className="btn btn-primary me-3">DOWNLOAD CV</a>
                          <a href="#projects"><button className="btn btn-outline-light ">View Projects</button></a>
                     </div>
                     <div className="social-links">

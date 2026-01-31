@@ -7,15 +7,17 @@ export default function Projects() {
     id: 1,
     title: 'E-Commerce Platform',
     description: 'Full-stack e-commerce application with product catalog, shopping cart, and payment integration.',
-    tech: ['React', 'Bootstrap'],
-    link: '#'
+    tech: ['React', 'Bootstrap','Firebase'],
+    img: '/store.png',
+    link: 'https://casamoda-m.netlify.app/',
   },
 {
   id: 2,
   title: 'Restaurant Application',
   description: 'A restaurant application that allows users to order meals online and reserve tables easily.',
   tech: ['React','Laravel', 'MySQL',"Css"], 
-  link: 'https://gustohouse.netlify.app/'
+  img: '/gustoPc.png',
+  link: 'https://gustohouse.netlify.app/',
 } 
 
   ];
@@ -36,7 +38,7 @@ export default function Projects() {
             <div key={project.id} className="col-lg-6 col-md-12">
               <div className="project-card">
                 <div className="card-header">
-                  <h4 className="project-title">{project.title}</h4>
+                  <img src={project.img} alt={project.title} className="project-title"/>
                 </div>
                 <div className="card-body">
                   <p className="project-description">{project.description}</p>
