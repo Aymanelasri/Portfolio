@@ -253,6 +253,19 @@ body {
   }
 }
 
+@media (max-width: 414px) {
+  .hero-content .mb-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .hero-content .btn {
+    margin-right: 0 !important;
+    width: 100%;
+  }
+}
+
 @media (max-width: 389px) {
   .hero-content .mb-4 {
     display: flex;
