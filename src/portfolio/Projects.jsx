@@ -18,7 +18,16 @@ export default function Projects() {
   tech: ['React','Laravel', 'MySQL',"Css"], 
   img: '/gustoPc.png',
   link: 'https://www.gustotable.site/',
-} 
+} ,
+{
+  id: 3,
+  title: 'Admin Dashboard Application',
+  description: 'A modern and responsive dashboard application that allows administrators to manage users, products, analytics, reports, notifications, and messages through an interactive and user-friendly interface.',
+  tech: ['React', 'CSS', 'Bootstrap','Recharts'],
+  img: '/Dashboard.png',
+  link: 'https://dashboard-if.netlify.app/',
+}
+
 
   ];
 

@@ -29,7 +29,8 @@ export default function Skills() {
       skills: [
         { name: 'Git & GitHub', icon: '/icons/git.png' },
         { name: 'SonarQube', icon: '/icons/sonarqube.png' },
-        { name: 'Docker', icon: '/icons/docker.png' }
+        { name: 'Docker', icon: '/icons/docker.png' },
+        { name: 'Jira', icon: '/icons/jira.png' }
       ]
     }
   ];
