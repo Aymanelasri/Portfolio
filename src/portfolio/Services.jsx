@@ -68,7 +68,7 @@ export default function Services() {
   return (
     <div className="services-container reveal">
       <div className="container">
-        <h2 className="services-header">My <span className="accent">Services</span></h2>
+        <h2 className="services-header fw-bold">My <span className="accent">Services</span></h2>
         <p>Some of the services I provide to my clients</p>
 
         <div className="row g-4">
