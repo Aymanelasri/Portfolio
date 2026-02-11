@@ -3,6 +3,7 @@ import { useEffect } from "react";
 export default function useScrollReveal() {
   useEffect(() => {
     const elements = document.querySelectorAll(".reveal");
+    const isMobile = window.innerWidth <= 768;
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -16,7 +17,7 @@ export default function useScrollReveal() {
         });
       },
       {
-        threshold: 0.5,
+        threshold: isMobile ? 0.1 : 0.4,
       }
     );
 

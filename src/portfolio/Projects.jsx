@@ -17,7 +17,7 @@ export default function Projects() {
   description: 'A restaurant application that allows users to order meals online and reserve tables easily.',
   tech: ['React','Laravel', 'MySQL',"Css"], 
   img: '/gustoPc.png',
-  link: 'https://gustohouse.netlify.app/',
+  link: 'https://www.gustotable.site/',
 } 
 
   ];

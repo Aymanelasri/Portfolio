@@ -253,7 +253,7 @@ body {
   }
 }
 
-@media (max-width: 368px) {
+@media (max-width: 389px) {
   .hero-content .mb-4 {
     display: flex;
     flex-direction: column;
