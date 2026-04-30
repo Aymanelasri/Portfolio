@@ -64,7 +64,7 @@ export default function About() {
                 <div className="col-6"><strong>{t('Availability:', 'Disponibilité :')}</strong><span className="text-success">{t('Available', 'Disponible')}</span></div>
               </div>
 
-              <a href="/CV.pdf" className="btn btn-gradient w-100">{t('Download CV', 'Télécharger CV')}</a>
+              <a href="/CV.Aymane Elasri.pdf" download="Aymane_Elasri_CV.pdf" className="btn btn-gradient w-100">{t('Download CV', 'Télécharger CV')}</a>
             </div>
           </div>
 

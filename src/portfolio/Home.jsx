@@ -8,8 +8,8 @@ export default function Home() {
 
   useEffect(() => {
     const strings = lang === 'en'
-      ? ['Full-Stack Developer', 'React Developer', 'Laravel Developer', 'UI/UX Enthusiast']
-      : ['Développeur Full-Stack', 'Développeur React', 'Développeur Laravel', 'Passionné UI/UX'];
+      ? ['Full-Stack Developer', 'React Developer', 'Laravel Developer']
+      : ['Développeur Full-Stack', 'Développeur React', 'Développeur Laravel', ];
 
     const typed = new window.Typed(typedRef.current, {
       strings,
@@ -37,7 +37,7 @@ export default function Home() {
               )}
             </p>
             <div className="mb-4">
-              <a href="/MyCv.pdf" download="Aymane_Elasri_CV.pdf" className="btn btn-primary me-3">
+              <a href="/CV.Aymane Elasri.pdf" download="Aymane_Elasri_CV.pdf" className="btn btn-primary me-3">
                 {t("DOWNLOAD CV", "TÉLÉCHARGER CV")}
               </a>
               <a href="#projects">

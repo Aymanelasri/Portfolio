@@ -50,7 +50,11 @@ export default function Projects() {
             <div key={project.id} className="col-lg-6 col-md-12">
               <div className="project-card">
                 <div className="card-header">
-                  <img src={project.img} alt={project.title} className="project-title" />
+                  <img
+                    src={project.img}
+                    alt={project.title}
+                    className="project-title"
+                  />
                 </div>
                 <div className="card-body">
                   <p className="project-description">{t(project.en, project.fr)}</p>
