@@ -7,6 +7,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+.home-container,
+.about-container,
+.skills-container,
+.services-container,
+.projects-container,
+.contact-container {
+  position: relative;
+  z-index: 1;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

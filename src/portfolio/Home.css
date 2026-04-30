@@ -94,21 +94,55 @@ body {
   
 }
 
-.hero-image img {
-  max-width: 300px;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  transition: all 0.3s;
-  border: 4px solid rgb(26, 201, 224);
-  box-shadow: 0 0 20px rgba(26, 201, 224, 0.5), 0 0 40px rgba(95, 234, 241, 0.3);
-  object-fit: cover;
+.photo-wrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-image img:hover {
-  transform: scale(1.05) translateY(-10px);
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4), 0 0 30px rgba(26, 201, 224, 0.8);
-  border: 4px solid #5feaf1;
+.profile-img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05) translateY(-6px);
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  z-index: 1;
+}
+
+.ring-1 {
+  width: 260px;
+  height: 260px;
+  border-top-color: #00e5ff;
+  border-right-color: #00e5ff;
+  animation: spinRing 3s linear infinite;
+}
+
+.ring-2 {
+  width: 275px;
+  height: 275px;
+  border-bottom-color: #5feaf1;
+  border-left-color: #5feaf1;
+  animation: spinRing 4s linear infinite reverse;
+}
+
+@keyframes spinRing {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }
 
 /* Button Styling */

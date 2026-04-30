@@ -1,75 +1,80 @@
 import React from 'react';
 import './Services.css';
+import { useLang } from './LangContext';
 
 export default function Services() {
+  const { t } = useLang();
+
   const services = [
     {
-      title: "Développement Web Full-Stack",
-      icon: "bi-code-slash",
+      en: 'Full-Stack Web Development', fr: 'Développement Web Full-Stack',
+      icon: 'bi-code-slash',
       points: [
-        "Conception et développement complet",
-        "API et bases de données",
-        "Frontend & Backend",
-        "Optimisation SEO"
+        { en: 'Complete design and development', fr: 'Conception et développement complet' },
+        { en: 'API and database integration',    fr: 'Intégration API et bases de données' },
+        { en: 'Frontend & Backend',              fr: 'Frontend & Backend' },
+        { en: 'SEO Optimization',                fr: 'Optimisation SEO' },
       ]
     },
     {
-      title: "Développement Frontend",
-      icon: "bi-pencil-square",
+      en: 'Frontend Development', fr: 'Développement Frontend',
+      icon: 'bi-pencil-square',
       points: [
-        "UI/UX Design",
-        "Applications web",
-        "React.js & JS",
-        "Intégration de maquettes"
+        { en: 'UI/UX Design',        fr: 'Design UI/UX' },
+        { en: 'Web applications',    fr: 'Applications web' },
+        { en: 'React.js & JavaScript', fr: 'React.js & JavaScript' },
+        { en: 'Mockup integration',  fr: 'Intégration de maquettes' },
       ]
     },
     {
-      title: "Développement Backend",
-      icon: "bi-server",
+      en: 'Backend Development', fr: 'Développement Backend',
+      icon: 'bi-server',
       points: [
-        "API REST",
-        "Bases de données",
-        "Gestion des serveurs",
-        "Sécurité et backend"
+        { en: 'REST API',          fr: 'API REST' },
+        { en: 'Databases',         fr: 'Bases de données' },
+        { en: 'Server management', fr: 'Gestion des serveurs' },
+        { en: 'Security & backend', fr: 'Sécurité & backend' },
       ]
     },
     {
-      title: "Expérience Digitale Optimale",
-      icon: "bi-arrow-repeat",
+      en: 'Optimal Digital Experience', fr: 'Expérience Digitale Optimale',
+      icon: 'bi-arrow-repeat',
       points: [
-        "Sites modernes",
-        "Responsive design",
-        "Animations & effets",
-        "Optimisé SEO"
+        { en: 'Modern websites',     fr: 'Sites modernes' },
+        { en: 'Responsive design',   fr: 'Design responsive' },
+        { en: 'Animations & effects', fr: 'Animations & effets' },
+        { en: 'SEO Optimized',       fr: 'Optimisé SEO' },
       ]
     },
     {
-      title: "Boutiques E-Commerce",
-      icon: "bi-cart",
+      en: 'E-Commerce Stores', fr: 'Boutiques E-Commerce',
+      icon: 'bi-cart',
       points: [
-        "Systèmes de paiement",
-        "Gestion des produits",
-        "CRM & marketing",
-        "Interfaces conviviales"
+        { en: 'Payment systems',        fr: 'Systèmes de paiement' },
+        { en: 'Product management',     fr: 'Gestion des produits' },
+        { en: 'CRM & marketing',        fr: 'CRM & marketing' },
+        { en: 'User-friendly interfaces', fr: 'Interfaces conviviales' },
       ]
     },
     {
-      title: "Gestion de Code & Déploiement",
-      icon: "bi-lightbulb",
+      en: 'Code Management & Deployment', fr: 'Gestion de Code & Déploiement',
+      icon: 'bi-lightbulb',
       points: [
-        "Git & GitHub",
-        "CI/CD pipelines",
-        "Déploiement cloud",
-        "Support technique"
+        { en: 'Git & GitHub',      fr: 'Git & GitHub' },
+        { en: 'CI/CD pipelines',   fr: 'Pipelines CI/CD' },
+        { en: 'Cloud deployment',  fr: 'Déploiement cloud' },
+        { en: 'Technical support', fr: 'Support technique' },
       ]
-    }
+    },
   ];
 
   return (
     <div className="services-container reveal">
       <div className="container">
-        <h2 className="services-header fw-bold">My <span className="accent">Services</span></h2>
-        <p>Some of the services I provide to my clients</p>
+        <h2 className="services-header fw-bold">
+          {t('My', 'Mes')} <span className="accent">{t('Services', 'Services')}</span>
+        </h2>
+        <p>{t('Some of the services I provide to my clients', 'Quelques services que je propose à mes clients')}</p>
 
         <div className="row g-4">
           {services.map((service, idx) => (
@@ -78,12 +83,12 @@ export default function Services() {
                 <div className="service-icon">
                   <i className={`bi ${service.icon}`}></i>
                 </div>
-                <h5 className="service-title">{service.title}</h5>
+                <h5 className="service-title">{t(service.en, service.fr)}</h5>
                 <ul className="service-points">
                   {service.points.map((point, i) => (
                     <li key={i}>
                       <i className="bi bi-check2-circle"></i>
-                      {point}
+                      {t(point.en, point.fr)}
                     </li>
                   ))}
                 </ul>

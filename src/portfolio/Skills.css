@@ -7,6 +7,7 @@
   font-weight: 500;
   line-height: 1.6;
   font-size: 20.5px;
+  text-align: center;
 }
 .skills-header{ 
     text-align: center; 
@@ -30,7 +31,21 @@
     justify-content: center;
     margin-bottom: 15px;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 20px;
+}
+
+.skill-icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.skill-label {
+    font-size: 12px;
+    color: #868585;
+    text-align: center;
+    line-height: 1.2;
 }
 
 .skill-icon {
@@ -42,17 +57,16 @@
     align-items:center;
     justify-content:center; 
     box-shadow: 0 8px 26px rgba(5,30,40,0.12);
-    transition: transform 0.25s ease, box-shadow 0.25s ease; 
     border: 2px solid rgba(26,201,224,0.12);
-    animation: floatmove 6s ease-in-out infinite alternate;
+    animation: float 3s ease-in-out infinite;
 }
 
-.skill-icon:nth-child(1) { animation-delay: 0s; }
-.skill-icon:nth-child(2) { animation-delay: 0.3s; }
-.skill-icon:nth-child(3) { animation-delay: 0.6s; }
-.skill-icon:nth-child(4) { animation-delay: 0.9s; }
-.skill-icon:nth-child(5) { animation-delay: 1.2s; }
-.skill-icon:nth-child(6) { animation-delay: 1.5s; }
+.skill-icon-wrapper:nth-child(1) .skill-icon { animation-delay: 0s; }
+.skill-icon-wrapper:nth-child(2) .skill-icon { animation-delay: 0.3s; }
+.skill-icon-wrapper:nth-child(3) .skill-icon { animation-delay: 0.6s; }
+.skill-icon-wrapper:nth-child(4) .skill-icon { animation-delay: 0.9s; }
+.skill-icon-wrapper:nth-child(5) .skill-icon { animation-delay: 1.2s; }
+.skill-icon-wrapper:nth-child(6) .skill-icon { animation-delay: 1.5s; }
 
 .skill-icon img{ 
 	width:40px;
@@ -67,16 +81,15 @@
 	 font-weight:700;
 }
 
-.skill-icon:hover{ 
-    transform: translateY(-6px) scale(1.02); 
-    box-shadow: 0 14px 34px rgba(5,30,40,0.16); 
+.skill-icon:hover {
+    transform: translateY(-10px) scale(1.2);
+    filter: drop-shadow(0 0 10px #00e5ff) drop-shadow(0 0 20px #00e5ff88);
+    transition: transform 0.3s ease, filter 0.3s ease;
     animation-play-state: paused;
 }
 
-@keyframes floatmove {
-	0% { transform: translate(0,0); }
-	25% { transform: translate(-6px,-4px); }
-	50% { transform: translate(4px,-6px); }
-	75% { transform: translate(6px,4px); }
-	100% { transform: translate(0,0); }
+@keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
 }

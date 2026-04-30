@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import useScrollReveal from "./useScrollReveal";
 import Services from "./Services";
+import { LangProvider } from "./LangContext";
 
 export default function Router() {
   const homeRef = useRef(null);
@@ -23,6 +24,7 @@ export default function Router() {
   };
 
   return (
+    <LangProvider>
     <div className="single-page-container">
       <Nav 
         scrollToSection={scrollToSection}
@@ -47,5 +49,6 @@ export default function Router() {
         <Contact />
       </section>
     </div>
+    </LangProvider>
   );
 }
