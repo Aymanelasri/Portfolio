@@ -20,7 +20,7 @@ export default function Projects() {
       en: 'A web application that generates EDI files for VAT declarations (Relevé des Déductions) compatible with the Moroccan SIMPL-TVA platform.',
       fr: 'Une application web permettant de générer des fichiers EDI pour les déclarations de TVA (Relevé des Déductions), compatible avec la plateforme marocaine SIMPL-TVA.',
       tech: ['React', 'Laravel', 'MySQL'],
-      img: '/TVA.png',
+      img: '/TVA.jpg',
       link: 'https://taxtva20.netlify.app/',
     },
     {
@@ -30,7 +30,7 @@ export default function Projects() {
       fr: 'Un tableau de bord moderne et responsive permettant aux administrateurs de gérer les utilisateurs, produits, analyses, rapports, notifications et messages via une interface interactive et conviviale.',
       tech: ['React', 'CSS', 'Bootstrap', 'Recharts'],
       img: '/Dashboard.png',
-      link: 'https://dashboard3.netlify.app/',
+      link: 'https://dashbaord3.netlify.app/',
     },
   ];
 
