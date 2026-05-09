@@ -21,7 +21,7 @@ export default function Projects() {
       fr: 'Une application web permettant de générer des fichiers EDI pour les déclarations de TVA (Relevé des Déductions), compatible avec la plateforme marocaine SIMPL-TVA.',
       tech: ['React', 'Laravel', 'MySQL'],
       img: '/TVA.jpg',
-      link: 'https://taxtva20.netlify.app/',
+      link: 'https://simpletaxx.netlify.app/',
     },
     {
       id: 3,
