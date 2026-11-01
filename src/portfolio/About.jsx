@@ -1,25 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
 import './About.css';
 import { FaGraduationCap, FaBriefcase } from 'react-icons/fa';
 import { useLang } from './LangContext';
-
-
-
-function useCountUp(target, active) {
-  const [count, setCount] = useState(0);
-  useEffect(() => {
-    if (!active) return;
-    let start = 0;
-    const step = Math.ceil(target / 40);
-    const timer = setInterval(() => {
-      start += step;
-      if (start >= target) { setCount(target); clearInterval(timer); }
-      else setCount(start);
-    }, 40);
-    return () => clearInterval(timer);
-  }, [active, target]);
-  return count;
-}
 
 
 
