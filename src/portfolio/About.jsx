@@ -64,7 +64,7 @@ export default function About() {
                 <div className="col-6"><strong>{t('Availability:', 'Disponibilité :')}</strong><span className="text-success">{t('Available', 'Disponible')}</span></div>
               </div>
 
-              <a href="/CV.Aymane Elasri.pdf" download="Aymane_Elasri_CV.pdf" className="btn btn-gradient w-100">{t('Download CV', 'Télécharger CV')}</a>
+              <a href="/MyCv.pdf" download="Aymane_Elasri_CV.pdf" className="btn btn-gradient w-100">{t('Download CV', 'Télécharger CV')}</a>
             </div>
           </div>
 
@@ -87,7 +87,7 @@ export default function About() {
               <div className="timeline-item">
                 <div className="timeline-icon"><FaBriefcase /></div>
                 <div className="timeline-body">
-                  <div className="timeline-year">2024 - {t('Present', 'Présent')}</div>
+                  <div className="timeline-year">2024 - 2026</div>
                   <h5>OFPPT - {t('Digital Development', 'Développement Digital')}</h5>
                   <p className="small text-muted">
                     {t(
