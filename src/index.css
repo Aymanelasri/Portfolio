@@ -26,3 +26,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.netlify-badge, a[href*="netlify.com"] {
+  display: none !important;
+}
