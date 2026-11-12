@@ -28,7 +28,7 @@ export default function Projects() {
       title: 'Gusto Restaurant & Table Reservation',
       en: 'A full-stack restaurant web application featuring interactive table reservations, menu catalog, customer reviews, blog section, and secure backend integration.',
       fr: 'Une application web de restaurant full-stack avec réservation de tables interactive, catalogue de menus, avis clients, section blog et intégration backend sécurisée.',
-      tech: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS'],
+      tech: [],
       img: '/Gusto.png', 
       link: 'https://resttaurant-one.vercel.app/',
     },
